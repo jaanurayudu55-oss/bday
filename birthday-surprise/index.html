@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Happy Birthday Baavaa ❤️ | 18 September 2026</title>
+  <meta name="description" content="A personalized, romantic birthday surprise website for Baavaa on 18 September 2026.">
+  
+  <!-- Modern Typography from Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@600;700;900&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Canvases -->
+  <canvas id="star-canvas" aria-hidden="true"></canvas>
+  <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+  <canvas id="fireworks-canvas" aria-hidden="true"></canvas>
+
+  <!-- Ambient Glowing Aura Blobs -->
+  <div class="ambient-glow glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow glow-3" aria-hidden="true"></div>
+
+  <!-- ====================================================================
+       1. MYSTERY WELCOME SCREEN
+       ==================================================================== -->
+  <aside id="welcome-screen" aria-label="Welcome screen">
+    <div class="welcome-content">
+      <h2 class="welcome-eyebrow">Hey... Wait. 👀</h2>
+      <p class="welcome-tagline">Nee kosam oka special surprise chesa...</p>
+      <div class="welcome-pulse-ring">
+        <button id="open-surprise-btn" class="btn-luxury" type="button">
+          <span>OPEN YOUR SURPRISE ❤️</span>
+        </button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Site Content Wrapper -->
+  <div class="site-wrapper">
+
+    <!-- ====================================================================
+         2. SURPRISE GIFT OPENING
+         ==================================================================== -->
+    <section id="gift-section" class="section-container" aria-label="Surprise Gift Opening">
+      <div class="gift-container">
+        <p class="gift-whisper">Naa jeevithaniki velugu thechina oka special vyakthi puttina roju idhi... ✨</p>
+        
+        <!-- Interactive 3D Gift Box -->
+        <div id="interactive-gift-box" class="gift-box-wrapper float-anim" role="button" tabindex="0" aria-label="Click to open birthday gift box">
+          <div class="gift-box-lid">
+            <div class="gift-bow">
+              <div class="bow-left"></div>
+              <div class="bow-right"></div>
+              <div class="bow-center"></div>
+            </div>
+            <div class="ribbon-vertical-lid"></div>
+          </div>
+          <div class="gift-box-body">
+            <div class="ribbon-vertical-body"></div>
+            <div class="ribbon-horizontal-body"></div>
+          </div>
+        </div>
+
+        <div class="gift-tap-hint">
+          <span>✨ Tap chesi nee gift open chey Baavaa 🎁 ✨</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. MAIN BIRTHDAY HERO
+         ==================================================================== -->
+    <section id="hero-section" aria-label="Main Birthday Celebration">
+      <!-- Floating Balloons -->
+      <div class="balloon-cluster" aria-hidden="true">
+        <div class="floating-balloon balloon-1"></div>
+        <div class="floating-balloon balloon-2"></div>
+        <div class="floating-balloon balloon-3"></div>
+        <div class="floating-balloon balloon-4"></div>
+      </div>
+
+      <div class="hero-glow-back" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <span class="hero-subtitle-top">✦ Celebrating You ✦</span>
+        <h1 class="hero-main-title">HAPPY BIRTHDAY</h1>
+        <span class="hero-name">BAAVAA❤️</span>
+        
+        <p class="hero-quote">
+          "Ee roju normal day kaadhu... naa Baavaa puttina roju, naa prapancham lo prematho nindina roju! ❤️"
+        </p>
+
+        <!-- 18th September Special Day Badge -->
+        <div class="special-day-container glass-card">
+          <div class="special-day-sparkle">✦ ✦ ✦</div>
+          <h2 class="special-day-title">18th September</h2>
+          <p class="special-day-subtitle">A Very Special Day ❤️</p>
+          <div class="special-day-wish">
+            <span>Nuvvu puttina ee roju naa jeevithaniki oka varam. Happy Birthday my dearest Baavaa! ✨</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. PERSONAL MESSAGE SECTION
+         ==================================================================== -->
+    <section id="personal-message-section" class="section-container" aria-label="Personal Message">
+      <div class="section-header">
+        <span class="section-tag">Direct From My Heart</span>
+        <h2 class="section-title">Naa Manasulo Maata... <span class="highlight">Direct From My Heart 💌</span></h2>
+        <p class="section-subtitle">Nee meedha unna prema ni cheppadaniki naa chinna prayatnam...</p>
+      </div>
+
+      <div class="message-card-wrapper">
+        <div class="glass-card message-card">
+          <div class="message-quote-icon" aria-hidden="true">“</div>
+          <div id="typed-personal-message" class="typed-message-content"></div>
+          <span class="typed-cursor" aria-hidden="true"></span>
+
+          <div class="message-signature">
+            <span class="signature-text">Eppatiki Nee Premato, Forever Yours ❤️</span>
+            <button id="replay-typing-btn" class="message-action-btn" type="button" aria-label="Replay typing animation">
+              <span>↻ Malli Choodu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. WHY YOU ARE SPECIAL
+         ==================================================================== -->
+    <section id="special-reasons-section" class="section-container" aria-label="Why You Are Special">
+      <div class="section-header">
+        <span class="section-tag">Infinite Reasons</span>
+        <h2 class="section-title">This Is Why <span class="highlight">You're Special ❤️</span></h2>
+        <p class="section-subtitle">Ee prapancham lo entho mandhi unna, naaku nuvve enduku antha special ante...</p>
+      </div>
+
+      <div class="reasons-grid">
+        <!-- Card 1 -->
+        <div class="glass-card reason-card">
+          <div class="reason-icon-wrapper" aria-hidden="true">🛡️</div>
+          <h3 class="reason-card-title">Nee Caring ❤️</h3>
+          <p class="reason-card-desc">
+            Nenu thinnana ledha ani adagadam daggari nundi, naa chinna badhani kooda kanipetti nannu odarche nee caring naaku pranam Baavaa.
+          </p>
+          <div class="reason-card-sparkle"><span>✨ Always by my side</span></div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="glass-card reason-card">
+          <div class="reason-icon-wrapper" aria-hidden="true">💖</div>
+          <h3 class="reason-card-title">Nee Prema 💖</h3>
+          <p class="reason-card-desc">
+            Nuvvu chupinche prema lo unna warmth, nannu eppudu oka raani la chusukune nee manasu... nijamga naaku the safest place in the world.
+          </p>
+          <div class="reason-card-sparkle"><span>✨ Pure & unconditional</span></div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="glass-card reason-card">
+          <div class="reason-icon-wrapper" aria-hidden="true">😊</div>
+          <h3 class="reason-card-title">The Way You Make Me Happy ❤️</h3>
+          <p class="reason-card-desc">
+            Entha kopam unna, entha tension lo unna... nee okka mata tho, nee cute smile tho naalo unna badha antha mayam chesesthav.
+          </p>
+          <div class="reason-card-sparkle"><span>✨ Naa daily smile reason</span></div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="glass-card reason-card">
+          <div class="reason-icon-wrapper" aria-hidden="true">👑</div>
+          <h3 class="reason-card-title">Simply... YOU ✨</h3>
+          <p class="reason-card-desc">
+            Nee maturity, nee stylish look, nee humble and loving nature... ee prapancham lo nee laantodu inkodu ledu Baavaa. You are truly one in a billion!
+          </p>
+          <div class="reason-card-sparkle"><span>✨ Naa Bangaram</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. MEMORY GALLERY
+         ==================================================================== -->
+    <section id="memory-gallery-section" class="section-container" aria-label="Memory Gallery">
+      <div class="section-header">
+        <span class="section-tag">Cherished Moments</span>
+        <h2 class="section-title">A Few Moments I <span class="highlight">Never Want To Forget... 📸</span></h2>
+        <p class="section-subtitle">Every adventure, every laugh, every quiet look with you is etched in my heart.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Photo 1: Bike Pose -->
+        <figure class="polaroid-card" data-index="0" role="button" tabindex="0" aria-label="View photo 1 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo1.png" class="focus-top-soft" alt="Baavaa with his Royal Enfield bike" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">My handsome rider & coolest partner in crime 🏍️✨</figcaption>
+        </figure>
+
+        <!-- Photo 2: Tree & Smile -->
+        <figure class="polaroid-card" data-index="1" role="button" tabindex="0" aria-label="View photo 2 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo2.png" class="focus-top-soft" alt="Baavaa smiling gently against a tree" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">That smile that melts my heart every single time 🌿❤️</figcaption>
+        </figure>
+
+        <!-- Photo 3: Seaside Stroll -->
+        <figure class="polaroid-card" data-index="2" role="button" tabindex="0" aria-label="View photo 3 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo3.jpg" class="focus-top" alt="Baavaa walking along the rocky coast with sunglasses" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Walking through life with you is my favorite journey 🌊🕶️</figcaption>
+        </figure>
+
+        <!-- Photo 4: Night City Lights -->
+        <figure class="polaroid-card" data-index="3" role="button" tabindex="0" aria-label="View photo 4 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo4.png" class="focus-top-soft" alt="Baavaa at night with glowing city lights" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Shining brighter than all the city lights combined 🌃💫</figcaption>
+        </figure>
+
+        <!-- Photo 5: Rock Rest Pose -->
+        <figure class="polaroid-card" data-index="4" role="button" tabindex="0" aria-label="View photo 5 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo5.png" class="focus-sitting-rocks" alt="Baavaa sitting relaxed on rocks" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">My peace, my rock, my forever favorite human 🪨🤍</figcaption>
+        </figure>
+
+        <!-- Photo 6: Bike Rider Pose -->
+        <figure class="polaroid-card" data-index="5" role="button" tabindex="0" aria-label="View photo 6 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo6.png" class="focus-top-soft" alt="Baavaa on his bike looking handsome" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Always looking dashing on your ride 🏍️🔥</figcaption>
+        </figure>
+
+        <!-- Photo 7: Sunglasses Pose -->
+        <figure class="polaroid-card" data-index="6" role="button" tabindex="0" aria-label="View photo 7 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo7.png" class="focus-top" alt="Baavaa with sunglasses looking cool" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Effortlessly stylish in every single moment 😎✨</figcaption>
+        </figure>
+
+        <!-- Photo 8: Standing Together At Night -->
+        <figure class="polaroid-card" data-index="7" role="button" tabindex="0" aria-label="View photo 8 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo8.png" class="focus-couple-standing" alt="Baavaa and me standing together" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Standing together, forever hand in hand 👫❤️</figcaption>
+        </figure>
+
+        <!-- Photo 9: Outdoors Couple Selfie -->
+        <figure class="polaroid-card" data-index="8" role="button" tabindex="0" aria-label="View photo 9 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo9.png" class="focus-wide-selfie" alt="Cute selfie of us together by the water" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">Every view is breathtaking when you're next to me 🌊🥰</figcaption>
+        </figure>
+
+        <!-- Photo 10: Romantic Artistic Sketch -->
+        <figure class="polaroid-card" data-index="9" role="button" tabindex="0" aria-label="View photo 10 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo10.png" class="focus-sketch" alt="Artistic sketch of us together" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">You and me, a beautiful love story forever 🎨💑</figcaption>
+        </figure>
+
+        <!-- Photo 11: Cute Couple Selfie -->
+        <figure class="polaroid-card" data-index="10" role="button" tabindex="0" aria-label="View photo 11 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo11.png" class="focus-couple-selfie" alt="Sweet couple selfie of us smiling together" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">My favorite smile in the whole world, right next to mine 🥰❤️</figcaption>
+        </figure>
+
+        <!-- Photo 12: Couple in Saree & Navy Shirt -->
+        <figure class="polaroid-card" data-index="11" role="button" tabindex="0" aria-label="View photo 12 in lightbox">
+          <div class="polaroid-img-box">
+            <img src="images/photo12.jpg" class="focus-couple-saree" alt="Beautiful couple photo in saree and stylish navy shirt" loading="lazy">
+          </div>
+          <figcaption class="polaroid-caption">You & Me, our eyes only for each other 🌴✨❤️</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Lightbox Modal for Gallery Photos -->
+    <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
+      <div class="lightbox-content">
+        <button id="lightbox-close" class="lightbox-close-btn" type="button" aria-label="Close Lightbox">&times;</button>
+        <button id="lightbox-prev" class="lightbox-nav-btn lightbox-prev-btn" type="button" aria-label="Previous photo">&#10094;</button>
+        <div class="lightbox-img-wrapper">
+          <img id="lightbox-img" src="" alt="Enlarged gallery photo">
+        </div>
+        <button id="lightbox-next" class="lightbox-nav-btn lightbox-next-btn" type="button" aria-label="Next photo">&#10095;</button>
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         7. SECRET LETTER
+         ==================================================================== -->
+    <section id="secret-letter-section" class="section-container" aria-label="Secret Love Letter">
+      <div class="section-header">
+        <span class="section-tag">Just For You Baavaa 💌</span>
+        <h2 class="section-title">Neeku Oka <span class="highlight">Secret Letter Vachindhi 💌</span></h2>
+        <p class="section-subtitle">Ee red wax seal meedha tap chesi nee letter chusuko...</p>
+      </div>
+
+      <div class="letter-interactive-area">
+        <div id="secret-envelope" class="envelope-wrapper" role="button" tabindex="0" aria-label="Open Secret Letter">
+          <div class="envelope-flap"></div>
+          <div class="envelope-pocket"></div>
+          <div class="wax-seal" aria-hidden="true"></div>
+          
+          <div class="letter-paper">
+            <h4>Naa Bangaram Baavaa 💌</h4>
+            <p class="letter-body">
+              "Nijam cheppalante, janmalu anevi nijam ga unte, enni vandhala janmalu ettina nenu malli ninnene vethukuntu vasthanu..."
+            </p>
+            <p class="letter-sign">Forever Yours ❤️</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Expanded Reading Modal / Panel -->
+      <div id="letter-modal-reveal" class="letter-modal-reveal">
+        <h3>Naa Bangaram Baavaa 💌,</h3>
+        <p>
+          Nijam cheppalante, janmalu anevi nijam ga unte, enni vandhala janmalu ettina nenu malli ninnene vethukuntu vasthanu. Endukante naa manasuki intha gattiga nachina vyakthi ee prapancham lo nuvvu thappa inkokaru leru.
+        </p>
+        <p>
+          Nenu em cheppina opikaga vine nee nature, nannu chinna pilla laga chusukune nee manasu, nannu ye kshanam lo kooda ontari ga anipinchani nee thodu... ivanni naaku pranam kante ekkuva.
+        </p>
+        <p>
+          Enni godavalu padda, enni jarigina... naa gundello nee meedha unna prema eppatiki thaggadhu, inka peruguthune untundhi. Naa prathi roju nee navvutho modalavali, nee thodutho gadavali.
+        </p>
+        <p>
+          Happy Birthday, Naa Gundekaya! Nuvvu eppudu santhoshamga, arogyamga, navvuthu undali ani aa devudini manasara korukuntunna.
+        </p>
+        <div class="letter-modal-signature">Forever and ever yours,<br>Nee Bangaram ❤️</div>
+      </div>
+    </section>
+
+    <!-- Background Audio Elements -->
+    <audio id="audio-main" loop preload="auto">
+      <source src="audio/Uppenantha%20ee%20premaki.mpeg" type="audio/mpeg">
+      <source src="audio/Uppenantha ee premaki.mpeg" type="audio/mpeg">
+    </audio>
+    <audio id="audio-gallery" loop preload="auto">
+      <source src="audio/Ee%20manase%20ee%20ee.mpeg" type="audio/mpeg">
+      <source src="audio/Ee manase ee ee.mpeg" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Global Music Player Widget -->
+    <div id="floating-music-bar" class="floating-music-bar" role="region" aria-label="Background music controls">
+      <button id="floating-music-btn" class="floating-music-btn" type="button" aria-label="Play or pause background music" title="Toggle Music">
+        <span class="music-icon-disc">🎵</span>
+        <div id="floating-sound-bars" class="sound-wave-bars" aria-hidden="true">
+          <span></span><span></span><span></span><span></span>
+        </div>
+      </button>
+      <div class="floating-music-info">
+        <span id="floating-track-title" class="floating-track-title">🎵 Uppenantha Ee Premaki</span>
+        <span class="floating-track-hint">Click to Mute / Play</span>
+      </div>
+    </div>
+
+    <!-- ====================================================================
+         8. FINAL SURPRISE
+         ==================================================================== -->
+    <section id="final-surprise-section" class="section-container" aria-label="Final Birthday Surprise">
+      <div class="final-surprise-box glass-card">
+        <div id="finale-pre" class="final-pre-trigger">
+          <span class="section-tag">Grand Finale</span>
+          <h2 class="section-title">Inko Chinna Surprise... <span class="highlight">👀</span></h2>
+          <p class="section-subtitle" style="margin-bottom: 2.2rem;">
+            Before you go, nee kosam inko special surprise undhi...
+          </p>
+          <button id="trigger-finale-btn" class="btn-luxury" type="button">
+            <span>TAP FOR YOUR FINAL SURPRISE ✨</span>
+          </button>
+        </div>
+
+        <div id="finale-revealed" class="final-revealed-content">
+          <h2 class="final-love-title">Once Again, Many More Happy Returns of the Day Baavaa! ❤️🎂</h2>
+          <p class="final-love-message">
+            "Nee face meedha oka cute smile theppinchadaniki nenu chesina chinna prayatnam idhi... I hope this little corner of the internet makes you smile today!"
+          </p>
+          <div class="final-love-dedication">
+            Naa gunde ninda prematho, just nee kosam... Forever & Always Yours ❤️
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         9. MINIMAL LUXURY FOOTER
+         ==================================================================== -->
+    <footer id="footer" class="site-footer">
+      <div class="footer-content">
+        <p class="footer-heart-text">Made with infinite love for Baavaa ❤️</p>
+        <p class="footer-date">18 • September • 2026</p>
+        <a href="#welcome-screen" class="footer-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+          <span>↑ Back to Top</span>
+        </a>
+      </div>
+    </footer>
+
+  </div> <!-- End Site Wrapper -->
+
+  <!-- Application Logic -->
+  <script src="script.js"></script>
+</body>
+</html>
